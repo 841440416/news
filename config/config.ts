@@ -48,13 +48,13 @@ export default defineConfig({
           routes: [
             {
               path: '/',
-              redirect: '/welcome',
+              redirect: '/article',
             },
             {
-              path: '/welcome',
-              name: 'welcome',
+              path: '/article',
+              name: 'article',
               icon: 'smile',
-              component: './Welcome',
+              component: './Article',
             },
             {
               path: '/admin',
@@ -67,7 +67,7 @@ export default defineConfig({
                   path: '/admin/sub-page',
                   name: 'sub-page',
                   icon: 'smile',
-                  component: './Welcome',
+                  component: './Article',
                   authority: ['admin'],
                 },
               ],

@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
 import { Card, Typography } from 'antd';
-import styles from './Welcome.less';
+import styles from './Article.less';
 
 const CodePreview: React.FC<{}> = ({ children }) => (
   <pre className={styles.pre}>
@@ -13,8 +13,7 @@ const CodePreview: React.FC<{}> = ({ children }) => (
 
 export default (): React.ReactNode => (
   <PageHeaderWrapper>
-    <Card>
-      文章列表
-    </Card>
+    <CodePreview />
+    <Card>文章列表</Card>
   </PageHeaderWrapper>
 );
