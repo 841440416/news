@@ -53,31 +53,31 @@ export default defineConfig({
             {
               path: '/article',
               name: 'article',
-              icon: 'smile',
+              icon: 'FileAdd',
               component: './Article',
             },
             {
-              path: '/admin',
-              name: 'admin',
-              icon: 'crown',
-              component: './Admin',
-              authority: ['admin'],
-              routes: [
-                {
-                  path: '/admin/sub-page',
-                  name: 'sub-page',
-                  icon: 'smile',
-                  component: './Article',
-                  authority: ['admin'],
-                },
-              ],
-            },
-            {
-              name: 'list.table-list',
-              icon: 'table',
               path: '/list',
-              component: './ListTableList',
+              name: 'article-list',
+              icon: 'UnorderedList',
+              component: './TableList',
             },
+            // {
+            //   path: '/admin',
+            //   name: 'admin',
+            //   icon: 'crown',
+            //   component: './Admin',
+            //   authority: ['admin'],
+            //   routes: [
+            //     {
+            //       path: '/admin/sub-page',
+            //       name: 'sub-page',
+            //       icon: 'smile',
+            //       component: './Article',
+            //       authority: ['admin'],
+            //     },
+            //   ],
+            // },
             {
               component: './404',
             },
